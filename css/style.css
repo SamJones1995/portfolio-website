@@ -70,6 +70,10 @@ a:active {
 	flex: 0 1 200px;
 }
 
+.page-header_logo {
+  flex: 0 1 100px;
+}
+
 .page-header_item:last-child {
 flex-grow: 1;
 text-align: right;
@@ -131,7 +135,7 @@ button:hover, button:focus {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
- } 
+ }
 
 .grid__item {
   background-color: #bd90b1;
@@ -307,6 +311,9 @@ form input, textarea {
     grid-template-columns: 1fr;
     margin: 10px 10px;
   }
+  .page-header_logo {
+    max-width: 200px;
+  }
   .about {
   	grid-template-columns: 1fr;
   }
@@ -328,6 +335,9 @@ form input, textarea {
   .grid {
     grid-template-columns: 1fr 1fr;
     margin: 10px 10px;
+  }
+  .page-header_logo {
+    max-width: 200px;
   }
   .about {
   	grid-template-columns: 1fr;
