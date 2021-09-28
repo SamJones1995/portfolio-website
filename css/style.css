@@ -131,7 +131,7 @@ button:hover, button:focus {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
- } 
+ }
 
 .grid__item {
   background-color: #bd90b1;
@@ -309,6 +309,9 @@ form input, textarea {
   }
   .about {
   	grid-template-columns: 1fr;
+  }
+  .page-header_logo {
+    max-width: 200px;
   }
   .graphic {
     grid-template-columns: 1fr;

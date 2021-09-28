@@ -5,6 +5,15 @@
 * Browsers: last 4 version
 */
 
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
+
 body {
 	background-color: #8a916f;
 	font-family: "Lato", sans-serif;
@@ -365,6 +374,9 @@ form input, textarea {
   .about {
   	-ms-grid-columns: 1fr;
   	grid-template-columns: 1fr;
+  }
+  .page-header_logo {
+    max-width: 200px;
   }
   .graphic {
     -ms-grid-columns: 1fr;
