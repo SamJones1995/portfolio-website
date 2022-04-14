@@ -11,7 +11,7 @@ Secondary Color (Orange): #e0b354;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --header-font-weight: 700;
-  --body-color: #8a916f;
+  --body-color: #fefbe9;
   --button-color: #357b70;
   --button-secondary-background-color: #e0b354;
   --button-secondary-color: #2b2b2b;
@@ -47,7 +47,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #05676e;
+  color: #183a1d;
 }
 
 a:hover, a:focus {
@@ -64,14 +64,18 @@ a:active {
 	display: flex;
 	width:  100%;
 	padding:  20px;
+  background-color: #e1eedd;
 }
 
 .page-header_item {
-	flex: 0 1 200px;
+	flex: 0 1 100px;
+  background-color: #e1eedd;
 }
 
-.page-header_logo {
-  flex: 0 1 100px;
+.page-header-logo {
+  margin-left: 15%;
+  background-color: #e1eedd;
+  color: #183a1d;
 }
 
 .page-header_item:last-child {
@@ -81,7 +85,9 @@ text-align: right;
 
 .navigation-list {
 	list-style-type:  none;
-}
+  margin-right: 15%;
+  margin-top: 30px;
+}  
 
 .navigation-list li {
 	display: inline-block;
@@ -128,7 +134,7 @@ button:hover, button:focus {
 
 .profile {
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 .grid {
