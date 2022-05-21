@@ -84,6 +84,7 @@ text-align: right;
 }
 
 .navigation-list {
+  color: #183a1d;
 	list-style-type:  none;
   margin-right: 15%;
   margin-top: 30px;
@@ -122,7 +123,12 @@ button:hover, button:focus {
 }
 
 .navigation-list__item--active {
+  color:#f0a04b;
   text-decoration: none;
+}
+
+.navigation-list__item {
+  color: #183a1d;
 }
 
 .profile__portrait {
