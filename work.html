@@ -1,80 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title> Sam Jones Web Portfolio</title>
-		<link rel="icon" type="image/png" href="img/icon.png" sizes="32x32">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style.production.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<header class="page-header">
-			<h1 class="page-header-logo">Sam Jones</h1>
-			<nav class="page-header_item">
-				<ul role="menubar" class="navigation-list">
-      		<li role="presentation">
-         		<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-      		</li>
-					<li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         	</li>
-         	<li role="presentation">
-         		<a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-      		</li>
-     			<li role="presentation">
-         		<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-      		</li>
-   			</ul>
-			</nav>
-		</header>
-		<!-- Main content -->
-		<section class="work_grid">
-			<h1>Work</h1>
-   		<div class="grid">
-      	<div class="grid__item">
-   				<h2>PokeDex Web App</h2>
-   				<p>
-						This simple application displays 151 Pokemon from an external API and shows them in a filterable list. It is styled with 
-						Bootstrap.
-   				</p>
-					 <img alt="PokeDex Screenshot" class="webScreenshot" src="img/pokeApp.PNG">
-					 <br>
-   				<a class="github-links" href="https://github.com/SamJones1995/simple-js-app">See project on GitHub</a>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sam Jones Web Portfolio</title>
+        <link rel="icon" type="image/png" href="img/icon.png" sizes="32x32" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/style.production.css"
+        />
+        <!-- Latest compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+            crossorigin="anonymous"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header >
+            <nav class="navbar">
+               <div class="container">
+                   <div class="container-fluid">
+                   <a class="navbar-brand" href="index.html"
+                       >Sam Jones</a
+                   >
+                   <div class="mainNav navbar-right" >
+                       <ul class="nav navbar-nav ml-auto navbar-right">
+                           <li class="nav-item pl-1">
+                               <a class="nav-link" href="work.html"
+                                   >Projects</a
+                               >
+                           </li>
+                           <li class="nav-item pl-1">
+                               <a class="nav-link" href="about.html"
+                                   >About</a
+                               >
+                           </li>
+                           <li class="nav-item pl-1">
+                              <a
+                                  class="nav-link"
+                                  href="contact.html"
+                                  >Contact</a
+                              >
+                          </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+           </header>
+        <!-- Main content -->
+        <section class="container work-cont">
+            <div class="row sticky-top">
+                <h1 class="text-center work-header-logo">Projects</h1>
+            </div>
+			<br>
+            <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center text-center">
+                    <div class="col-sm-12 grid__item d-flex justify-content-center text-center">
+                        <h2>PokeDex Web App</h2>
+                        <p>
+                            This simple application displays 151 Pokemon from an
+                            external API and shows them in a filterable list. It
+                            is styled with Bootstrap.
+                        </p>
+                        <img
+                            alt="PokeDex Screenshot"
+                            class="img-responsive center-block webScreenshot"
+                            src="img/pokeApp.PNG"
+                        />
+                        <br />
+                        <a
+                            class="github-links"
+                            href="https://samjones1995.github.io/simple-js-app/"
+                            >See live project</a
+                        >
+                        <br />
+                        <a
+                            class="github-links"
+                            href="https://github.com/SamJones1995/simple-js-app"
+                            >See project on GitHub</a
+                        >
+                    </div>
+                </div>
+                <div class="col-sm-4">
+					<div class="col-sm-12 grid__item d-flex justify-content-center text-center">
+                    <h2>myHorror</h2>
+                    <p>
+                        This app is built using ReactJS to show movies to
+                        registered users. myHorror is a single page app and it
+                        fetches from a REST API database.
+                    </p>
+                    <img
+                        alt="myHorror Screenshot"
+                        class="img-responsive center-block webScreenshot"
+                        src="img/myHorror.PNG"
+                    />
+                    <br />
+                    <a class="github-links" href="https://myhorror.netlify.app"
+                        >See live project</a
+                    >
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://github.com/SamJones1995/myHorror-client"
+                        >See project on GitHub</a
+                    >
 				</div>
-				<div class="grid__item">
-   				<h2>myHorror</h2>
-   				<p>
-						This app is built using ReactJS to show movies to registered users. myHorror is a single page app and it fetches from a REST API database.
-						
-   				</p>
-					 <img alt="myHorror Screenshot" class="webScreenshot" src="img/myHorror.PNG">
-					 <br>
-   				<a class="github-links" href="https://github.com/SamJones1995/myHorror-client">See project on GitHub</a>
+                </div>
+                <div class="col-sm-4">
+					<div class="col-sm-12 grid__item d-flex justify-content-center text-center ">
+                    <h2>Meet App</h2>
+                    <p>
+                        Meet is a serverless progressive web application (PWA)
+                        built with React to show a user filtered list of
+                        upcoming events.
+                    </p>
+                    <img
+                        alt="MeetApp Screenshot"
+                        class="img-responsive center-block webScreenshot"
+                        src="img/meetApp.PNG"
+                    />
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://samjones1995.github.io/meet/"
+                        >See live project</a
+                    >
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://github.com/SamJones1995/meet"
+                        >See project on GitHub</a
+                    >
 				</div>
-				<div class="grid__item">
-   				<h2>Meet App</h2>
-   				<p>
-						Meet is a serverless progressive web application (PWA) built with React to show a user filtered list of upcoming events. 
-						
-   				</p>
-					 <img alt="MeetApp Screenshot" class="webScreenshot" src="img/meetApp.PNG">
-					 <br>
-					 <a class="github-links" href="https://samjones1995.github.io/meet/">See live project</a>
-					 <br>
-   				<a class="github-links" href="https://github.com/SamJones1995/meet">See project on GitHub</a>
+                </div>
+            </div>
+			<br>
+            <div class="row">
+                <div class="col-sm-4">
+					<div class="col-sm-12 grid__item d-flex justify-content-center text-center">
+                    <h2>Mobile Chat App</h2>
+                    <p>
+                        Chat app for mobile devices using React Native. The app
+                        provides users with a chat interface and options to
+                        share images and their location.
+                    </p>
+                    <img
+                        alt="MeetApp Screenshot"
+                        class="img-responsive center-block "
+                        src="img/mobile-chat.png"
+                    />
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://github.com/SamJones1995/mobile-chat-app"
+                        >See project on GitHub</a
+                    >
+					</div>
+                </div>
+                <div class="col-sm-4">
+					<div class="col-sm-12 grid__item d-flex justify-content-center text-center">
+                    <h2>To Do List</h2>
+                    <p>
+                        Simple app built with HTML, CSS, JavaScript, and jQuery.
+                        Users can add, strikethrough, remove, or reorder todos.
+                    </p>
+                    <img
+                        alt="MeetApp Screenshot"
+                        class="img-responsive center-block webScreenshot"
+                        src="img/todo.png"
+                    />
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://samjones1995.github.io/to-do-list-app/"
+                        >See live project</a
+                    >
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://github.com/SamJones1995/to-do-list-app"
+                        >See project on GitHub</a
+                    >
 				</div>
-   		</div>
-		</section>
-		<footer class="page-footer">
-  			<p>Find me on</p>
-  			<div class="social-media">
-  				<img src="img/github_icon.svg" alt="Github">
-  				<img src="img/twitter_icon.svg" alt="Twitter">
-  				<img src="img/linkedin_icon.svg" alt="LinkedIn">
-  			</div>
-		</footer>
-		<script src="js/tota11y.min.js"></script>
-	</body>
+                </div>
+                <div class="col-sm-4">
+					<div class="col-sm-12 grid__item d-flex justify-content-center text-center">
+                    <h2>myHorror Angular</h2>
+                    <p>
+                        Frontend client for my movie_api built using Angular. It has all the same functionality as the React version with a different build and style. 
+                    </p>
+                    <img
+                        alt="MeetApp Screenshot"
+                        class="img-responsive center-block webScreenshot"
+                        src="img/MyHorrorAngularClient.png"
+                    />
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://samjones1995.github.io/myHorror-Angular-Client/login"
+                        >See live project</a
+                    >
+                    <br />
+                    <a
+                        class="github-links"
+                        href="https://github.com/SamJones1995/myHorror-Angular-Client"
+                        >See project on GitHub</a
+                    >
+                    
+				</div>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+                <a href="https://github.com/SamJones1995" style="text-decoration: none;">
+                <img alt="Github"  class="img_link" src="img/github_icon.svg" />
+            </a>
+                <img alt="Twitter" src="img/twitter_icon.svg" />
+                <a href="https://www.linkedin.com/in/samuel-jones-b9925687" style="text-decoration: none;">
+                <img alt="LinkedIn" src="img/linkedin_icon.svg" />
+            </a>
+            </div>
+        </footer>
+        <br>
+        <br>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/tota11y.min.js"></script>
+    </body>
 </html>

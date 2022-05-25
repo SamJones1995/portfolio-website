@@ -19,7 +19,7 @@ Secondary Color (Orange): #e0b354;
 
 
 body {
-	background-color: var(--body-color);
+  background-color: #fefbe9 !important;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -42,13 +42,10 @@ h3 {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-a:visited {
-  /* visited link */
-  color: #183a1d;
-}
+
 
 a:hover, a:focus {
   /* No underlining when hovering over a link */
@@ -58,6 +55,15 @@ a:hover, a:focus {
 a:active {
   /* selected link */
   color: #489c79;
+}
+
+.img_link {
+  text-decoration: none;
+}
+
+.mainNav {
+  margin-right: 20px;
+  float: right;
 }
 
 .page-header {
@@ -89,6 +95,10 @@ text-align: right;
   margin-right: 15%;
   margin-top: 30px;
 }  
+
+.navbar { 
+  background-color: #e1eedd; 
+}
 
 .navigation-list li {
 	display: inline-block;
@@ -129,6 +139,14 @@ button:hover, button:focus {
 
 .navigation-list__item {
   color: #183a1d;
+}
+
+.navbar-brand {
+  color: #183a1d;
+}
+
+.nav-link {
+  color: #183a1d !important;
 }
 
 .profile__portrait {
@@ -281,6 +299,11 @@ form input, textarea {
 	padding: 5px;
 	border-radius: 5px;
 	width: 240px;
+}
+
+.webscreenshot {
+  width: 250px;
+  height: 127px;
 }
 
 .work_grid {

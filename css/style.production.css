@@ -6,7 +6,7 @@
 */
 
 body {
-	background-color: #fefbe9;
+	background-color: #fefbe9 !important;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -64,6 +64,27 @@ a:active {
   margin-left: 15%;
   background-color: #e1eedd;
   color: #183a1d;
+}
+
+.navbar { 
+  background-color: #e1eedd; 
+}
+
+.navbar-brand {
+  color: #183a1d;
+}
+
+.nav-link {
+  color: #183a1d !important;
+}
+
+.mainNav {
+  margin-right: 20px;
+  float: right;
+}
+
+.work-header-logo {
+  color: #183a1d !important;
 }
 
 .page-header_item {
@@ -148,71 +169,25 @@ button:hover, button:focus {
  }
 
 .grid__item {
-  background-color: #bd90b1;
+  background-color: #357b70;
+  border-radius: 5%;
+  color: #fefbe9;
+  padding-bottom: 10px;
 }
 
-.grid__item:last-child {
-	-ms-grid-column: 3;
-	    grid-column-start: 3;
-	-ms-grid-column-span: 0;
-	grid-column-end: 3;
-	-ms-grid-row: 1;
-	    grid-row-start: 1;
-	-ms-grid-row-span: 2;
-	grid-row-end: 3;
-}
+
 
 .github-links {
-  color: #f6c453;
+  color: #fefbe9;
 }
 
 .contact-links {
   color: #183a1d;
 }
 
-/* start grid fallback */
-.grid__item {
- display: inline-block;
- width: 33%;
-}
-/* end grid fallback */
 
-@supports (display: grid) {
- .grid {
-   display: -ms-grid;
-   display: grid;
-   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
-   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 20px;
-   margin: 10px 10px;
 
- }
- .grid__item {
-   background-color: #357b70;
-   border-radius: 5%;
-   width: auto;
-   color: #fefbe9;
-   min-height: auto;
-   margin: auto auto;
-   padding: 5%;
-  
- }
 
- .grid__item:first-child {
-   
-   bottom: 100px;
- }
- .grid__item:last-child {
-   -ms-grid-column: 3;
-   grid-column: 3 / 3;
-   -ms-grid-row: 1;
-   -ms-grid-row-span: 2;
-   grid-row: 1 / 3;
-   position: relative;
-   /*bottom: 5px;*/
- }
-}
 
 .page-footer {
   clear: both;
@@ -334,6 +309,10 @@ form input, textarea {
  max-width: 900px;
  margin: auto auto;
  text-align: center;
+}
+
+.webScreenshot {
+  border: #fefbe9;
 }
 
 @-webkit-keyframes color-change {
@@ -462,5 +441,8 @@ form input, textarea {
     grid-row: auto / auto;
     position: relative;
     bottom: 0px;
+  }
+  .work-cont {
+    max-width: 500px !important;
   }
 }

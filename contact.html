@@ -8,30 +8,48 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.production.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+            crossorigin="anonymous"
+        />
 	</head>
 	<body>
-		<header class="page-header">
-			<h1 class="page-header-logo">Sam Jones</h1>
-			<nav class="page-header_item">
-				<ul role="menubar" class="navigation-list">
-      		<li role="presentation">
-         		<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-      		</li>
-					<li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         	</li>
-         	<li role="presentation">
-         		<a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-      		</li>
-     			<li role="presentation">
-         		<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-      		</li>
-   			</ul>
-			</nav>
-		</header>
-		<div class="contact_grid">
-			<section class="contact_grid_item">
-				<div class="contact_grid_subitem">
+		<header >
+            <nav class="navbar">
+               <div class="container">
+                   <div class="container-fluid">
+                   <a class="navbar-brand" href="index.html"
+                       >Sam Jones</a
+                   >
+                   <div class="mainNav navbar-right" >
+                       <ul class="nav navbar-nav ml-auto navbar-right">
+                           <li class="nav-item pl-1">
+                               <a class="nav-link" href="work.html"
+                                   >Projects</a
+                               >
+                           </li>
+                           <li class="nav-item pl-1">
+                               <a class="nav-link" href="about.html"
+                                   >About</a
+                               >
+                           </li>
+                           <li class="nav-item pl-1">
+                              <a
+                                  class="nav-link"
+                                  href="contact.html"
+                                  >Contact</a
+                              >
+                          </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+           </header>
+		
+			
+				<div class="container text-center">
 					<h1>Contact</h1>
 		    	Sam Jones<br>
 		    	3853 Bradshaw Rd <br>
@@ -40,35 +58,23 @@
 		    	<br>
 
 		    	Tel:  <a class="contact-links" href="tel:5404931357">540-493-1357</a><br>
-		    	Skype:  <a class="contact-links" href="live:d0a0d8c4aeed49fc">live:d0a0d8c4aeed49fc</a><br>
-		    	Email: <a class="contact-links" href="mailto:sam@nileco.com">sam@nileco.com</a>
+		    	Discord:  <a class="contact-links" >HikerScarecrow#4609</a><br>
+		    	Email: <a class="contact-links" href="mailto:sam@nileco.com">samjonesdeveloper@gmail.com</a>
 				</div>
-			</section>
-			<section class="contact_grid_item">
-				<form action="#" method="post" id="contact-form">
-					<label class="standard-label" for="contact-email">
-						<br>Email:</label>
-					<input type="email" id="contact-email" required>
-
-					<label class="standard-label" for="contact-tel">
-						<br>Telephone:</label>
-					<input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-					<label class="standard-label" for="contact-message">
-					<br>Message:</label>
-					<textarea maxlegth="240" id="contact-message" required></textarea>
-
-					<input type="submit" value="Send message">
-				</form>
-			</section>
-		</div>
+				<br>
+				<br>
+		
 				<footer class="page-footer">
-	  			<p>Find me on</p>
-	  			<div class="social-media">
-	  				<img src="img/github_icon.svg" alt="Github">
-	  				<img src="img/twitter_icon.svg" alt="Twitter">
-	  				<img src="img/linkedin_icon.svg" alt="LinkedIn">
-	  			</div>
+					<p>Find me on</p>
+					<div class="social-media">
+						<a href="https://github.com/SamJones1995" style="text-decoration: none;">
+						<img alt="Github"  class="img_link" src="img/github_icon.svg" />
+					</a>
+						<img alt="Twitter" src="img/twitter_icon.svg" />
+						<a href="https://www.linkedin.com/in/samuel-jones-b9925687" style="text-decoration: none;">
+						<img alt="LinkedIn" src="img/linkedin_icon.svg" />
+					</a>
+					</div>
 				</footer>
 	<script src="js/tota11y.min.js"></script>
 	</body>
